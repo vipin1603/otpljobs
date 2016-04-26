@@ -1,0 +1,56 @@
+body{
+	background-color:#7AE0D6;
+}
+.logo{
+	width:200px;
+	height:100px;
+	margin-left:100px;
+}
+.dw{
+	margin-top:10px;
+}
+.tb{
+	width:40%;
+}
+#p{
+	margin-left:300px;
+}
+p{
+	font-size:24px;
+	font-family:"Comic Sans MS", cursive;
+	color:#FF0000;
+	margin-left:200px;
+	margin-top:10px;
+	}
+.joblisting{margin-top:10px;
+float:left;
+margin-left:200px;
+}	
+
+.se{float:left;
+margin-top:220px;
+margin-left:-450px;
+}
+
+.sel{float:left;
+margin-top:220px;
+margin-left:-350px;
+}
+.detail{float:left;
+margin-top:220px;
+margin-left:-150px;
+}
+.tbl{
+background-color:#FFF;
+width:50%;
+}
+.foot{
+	margin-left:50px;
+	margin-top:350px;
+}
+.footer{
+	margin-left:50px;
+	margin-top:20px;
+}
+
+    

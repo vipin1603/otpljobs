@@ -1,0 +1,25 @@
+body{
+	background-color:#7AE0D6;
+}
+.logo{
+	width:200px;
+	height:100px;
+	margin-left:100px;
+}
+.footer{
+	clear:both;
+	position:absolute;
+	margin-left:100px;
+}
+table{
+	padding:2px;
+	width:50%;
+	height:80%;
+	border-top:400px;
+	}
+.dw{
+	margin-top:100px;
+}
+#p{
+	margin-left:300px;
+}
