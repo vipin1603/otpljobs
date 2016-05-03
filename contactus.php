@@ -45,8 +45,14 @@ function checkEmail() {
             </div>           
        </div>
 </nav>
-<p><b><i>Thank You For Visting!</i></b></p>
 <div>
+<label class="lbl"><b><i>Thank You For Visiting!</i></b></label>
+</div>
+<div class="rt"><label>Please contact:<br />
+			129-G/15,NSEZ,<br />
+            Noida Phase-2, <br />
+            Uttar Pradesh-201301 <br />
+            Contact No:- <b>9999999999</b></label>
 </div>
 <footer>
 <div class="foot">

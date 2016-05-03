@@ -6,7 +6,7 @@
 <title>Home</title>
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 <link rel="stylesheet" type="text/css" href="css/main.css" />
-<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript">
 function checkEmail() {
@@ -21,8 +21,8 @@ function checkEmail() {
 </script>
 </head>
 
-<body>
-<form action="" method="post">
+<body style="margin:20px">
+<form action="" id="frm" method="post" enctype="multipart/form-data">
 <div ><img class="logo" src="image/otpl.png" />
 </div>
 <nav class="navbar navbar-inverse" id="my-navbar">
@@ -45,8 +45,10 @@ function checkEmail() {
             </div>           
        </div>
 </nav>
-
-<footer class="foot">
+</header>
+<div><img class="img-responsive imgs" src="image/job.jpeg">
+</div>
+<footer class="footer">
 <div>
 <input type="email" name="email" id="email" placeholder="Enter Your Email"   />
 <input type="submit" value="Subscribe" onClick="checkEmail()"/>

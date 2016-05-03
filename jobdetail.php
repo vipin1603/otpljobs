@@ -14,7 +14,7 @@ $data = $result->fetch_row();
 <title>Job Detail</title>
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 <link rel="stylesheet" type="text/css" href="css/main.css" />
-<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript">
 function checkEmail() {
@@ -29,19 +29,30 @@ function checkEmail() {
 </script>
 </head>
 
-<body>
-<form action="" method="post">
+<body style="margin:20px">
+<form action="" id="frm" method="post" enctype="multipart/form-data">
 <div ><img class="logo" src="image/otpl.png" />
 </div>
-<header>
-<div id="menu">
-<ul>
-<li><a href="home.php">Home</a></li>
-<li><a href="jobpostal.php">JobPostal</a></li>
-<li><a href="joblisting.php">Job Listing</a></li>
-<li><a href="contactus.php">Contact Us</a></li>
-</ul>
-</div>
+<nav class="navbar navbar-inverse" id="my-navbar">
+	<div class="container">
+		<div class="navbar-header">
+        	<button type="button" class="navbar-toggle navbar-toggle-always" data-toggle="collapse" data-target="#navbar-collapse">
+            	<span class="icon-bar"</span>
+                <span class="icon-bar"</span>
+                <span class="icon-bar"</span>
+           
+            </button>
+			</div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+            	<ul class="nav navbar-nav">
+                <li><a href="home.php" >Home</a>
+                <li><a href="jobpostal.php" >JobPostal</a>
+                <li><a href="joblisting.php" >Job Listing</a>
+                <li><a href="contactus.php" >Contact Us</a>	
+                </ul>
+            </div>           
+       </div>
+</nav>
 </header>
 <div class="tbl">
 <table border="1" cellpadding="2" cellspacing="3" rules="all">

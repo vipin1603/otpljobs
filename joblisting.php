@@ -1,20 +1,6 @@
 <?php 
 include('connection.php');
 $output = NULL;
-
-if(isset($_POST['search'])){
-	$job_title = $_POST['job_title'];
-	$result = $mysqli->query("SELECT * FROM otpljobs WHERE job_title LIKE '%$job_title%'");
-	$data = $result->fetch_row();
-// echo  $data[12]; 
-}
-if(isset($_POST['search1'])){
-	$category = $_POST['category'];
-	$result1 = $mysqli->query("SELECT * FROM otpljobs WHERE category LIKE '%$category%'");
-$data1 = $result1->fetch_row();
-//	echo  $data1[15]; 
-}
-
 $result2 = $mysqli->query("SELECT * FROM otpljobs");
 ?>
 
@@ -27,14 +13,11 @@ $result2 = $mysqli->query("SELECT * FROM otpljobs");
 
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="theme.bootstrap.css">
-
-
+<link rel="stylesheet" type="text/css" href="css/main.css">
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
-
 <script type="text/javascript" src="js/jquery.tablesorter.js"></script>
 <script type="text/javascript" src="js/jquery.tablesorter.widgets.js"></script>
-
 <script type="text/javascript">
 function checkEmail() {
     var email = document.getElementById('email');
@@ -129,6 +112,30 @@ $(function() {
 </head>
 
 <body style="margin:20px">
+<form action="" id="frm" method="post" enctype="multipart/form-data">
+<div ><img class="logo" src="image/otpl.png" />
+</div>
+<nav class="navbar navbar-inverse" id="my-navbar">
+	<div class="container">
+		<div class="navbar-header">
+        	<button type="button" class="navbar-toggle navbar-toggle-always" data-toggle="collapse" data-target="#navbar-collapse">
+            	<span class="icon-bar"</span>
+                <span class="icon-bar"</span>
+                <span class="icon-bar"</span>
+           
+            </button>
+			</div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+            	<ul class="nav navbar-nav">
+                <li><a href="home.php" >Home</a>
+                <li><a href="jobpostal.php" >JobPostal</a>
+                <li><a href="joblisting.php" >Job Listing</a>
+                <li><a href="contactus.php" >Contact Us</a>	
+                </ul>
+            </div>           
+       </div>
+</nav>
+</header>
 <div id="demo">
 <table>
 <thead>
